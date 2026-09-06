@@ -88,13 +88,10 @@ kotlin {
 }
 
 mavenPublishing {
-    // 仅在显式设置 RELEASE_TO_CENTRAL 环境变量时启用 Central 发布，防止本地重编版误发布
+    // 仅在显式设置 RELEASE_TO_CENTRAL 环境变量时启用 Central 发布与签名
+    // （签名密钥由 CI 注入的 signingInMemoryKey* 环境变量提供；本地 mavenLocal 发布不签名）
     if (providers.environmentVariable("RELEASE_TO_CENTRAL").isPresent) {
         publishToMavenCentral(true)
-    }
-
-    // 仅有 GPG 签名密钥时才启用签名（本地 mavenLocal 发布可跳过）
-    if (project.hasProperty("signing.keyId") || project.hasProperty("signing.inMemoryKey")) {
         signAllPublications()
     }
 
