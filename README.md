@@ -6,7 +6,7 @@
 
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.4.0-7F52FF?logo=kotlin&logoColor=white)](https://kotlinlang.org)
 [![Compose Multiplatform](https://img.shields.io/badge/Compose%20Multiplatform-1.11.1-4285F4?logo=jetpackcompose&logoColor=white)](https://www.jetbrains.com/lp/compose-multiplatform/)
-[![Maven Central](https://img.shields.io/maven-central/v/io.github.huarangmeng/markdown-parser.svg?color=orange&label=Maven%20Central)](https://central.sonatype.com/search?q=io.github.huarangmeng.markdown)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.zusrsoft/markdown-parser.svg?color=orange&label=Maven%20Central)](https://central.sonatype.com/search?q=io.github.zusrsoft.markdown)
 [![CommonMark](https://img.shields.io/badge/CommonMark%200.31.2-652%2F652%20✓-brightgreen)](https://spec.commonmark.org/0.31.2/)
 [![Android API](https://img.shields.io/badge/Android%20API-23%2B-34A853?logo=android&logoColor=white)](https://android-arsenal.com/api?level=24)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -74,9 +74,9 @@ Add to your `gradle/libs.versions.toml`:
 markdown = "1.5.2"
 
 [libraries]
-markdown-parser = { module = "io.github.huarangmeng:markdown-parser", version.ref = "markdown" }
-markdown-runtime = { module = "io.github.huarangmeng:markdown-runtime", version.ref = "markdown" }
-markdown-renderer = { module = "io.github.huarangmeng:markdown-renderer", version.ref = "markdown" }
+markdown-parser = { module = "io.github.zusrsoft:markdown-parser", version.ref = "markdown" }
+markdown-runtime = { module = "io.github.zusrsoft:markdown-runtime", version.ref = "markdown" }
+markdown-renderer = { module = "io.github.zusrsoft:markdown-renderer", version.ref = "markdown" }
 ```
 
 Then in your module's `build.gradle.kts`:
@@ -601,9 +601,9 @@ update rules.
 
 | Capability | Maven modules used by this project | Repository |
 |------------|-----------------------------------|------------|
-| LaTeX math | `io.github.huarangmeng:latex-base`, `io.github.huarangmeng:latex-parser`, `io.github.huarangmeng:latex-renderer` | [huarangmeng/latex](https://github.com/huarangmeng/latex) |
-| Code highlighting | `io.github.huarangmeng:codehighlight-parser`, `io.github.huarangmeng:codehighlight-render` | [huarangmeng/codehigh](https://github.com/huarangmeng/codehigh) |
-| Diagram blocks | `io.github.huarangmeng:diagram-core`, `io.github.huarangmeng:diagram-layout`, `io.github.huarangmeng:diagram-parser`, `io.github.huarangmeng:diagram-render` | [huarangmeng/diagram](https://github.com/huarangmeng/diagram) |
+| LaTeX math | `io.github.zusrsoft:latex-base`, `io.github.zusrsoft:latex-parser`, `io.github.zusrsoft:latex-renderer` | [zusrsoft/latex](https://github.com/zusrsoft/latex) |
+| Code highlighting | `io.github.zusrsoft:codehighlight-parser`, `io.github.zusrsoft:codehighlight-render` | [zusrsoft/codehigh](https://github.com/zusrsoft/codehigh) |
+| Diagram blocks | `io.github.zusrsoft:diagram-core`, `io.github.zusrsoft:diagram-layout`, `io.github.zusrsoft:diagram-parser`, `io.github.zusrsoft:diagram-render` | [zusrsoft/diagram](https://github.com/zusrsoft/diagram) |
 
 If you only need a subset of the rendering stack, you can depend on the corresponding upstream library directly.
 

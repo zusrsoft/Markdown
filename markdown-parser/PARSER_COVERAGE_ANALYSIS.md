@@ -243,7 +243,7 @@
 - ✅ `\begin{equation}...\end{equation}` 等环境自动编号（LaTeX 渲染库原生支持）
 - ✅ `\ref{}`/`\eqref{}` 公式引用（LaTeX 渲染库原生支持）
 
-> **备注**: 公式编号、环境自动编号和引用功能均由 LaTeX 渲染库（`io.github.huarangmeng:latex-renderer`）原生处理。Parser 层保留完整 LaTeX 文本，不做编号提取，交由 LaTeX 库的 `EquationNumbering` + `TagMeasurer` + `RefMeasurer` 完整处理编号生命周期。
+> **备注**: 公式编号、环境自动编号和引用功能均由 LaTeX 渲染库（`io.github.zusrsoft:latex-renderer`）原生处理。Parser 层保留完整 LaTeX 文本，不做编号提取，交由 LaTeX 库的 `EquationNumbering` + `TagMeasurer` + `RefMeasurer` 完整处理编号生命周期。
 
 #### 定义列表（扩展）
 - ✅ 术语行（紧接定义前的非空行）
@@ -288,7 +288,7 @@
 - ✅ 图表类型大小写不敏感
 - ✅ 图表代码原样保留，不解析 Markdown 语法
 
-> **备注**: 后处理阶段 `DiagramProcessor` 会将 info string 命中已知图表语言的 `FencedCodeBlock` 转换为 `DiagramBlock` AST 节点。渲染层优先通过外部 `io.github.huarangmeng:diagram-render` 统一渲染 Mermaid / PlantUML / DOT 图表；暂未被该库识别的图表类型会降级为带类型标签的代码块展示。
+> **备注**: 后处理阶段 `DiagramProcessor` 会将 info string 命中已知图表语言的 `FencedCodeBlock` 转换为 `DiagramBlock` AST 节点。渲染层优先通过外部 `io.github.zusrsoft:diagram-render` 统一渲染 Mermaid / PlantUML / DOT 图表；暂未被该库识别的图表类型会降级为带类型标签的代码块展示。
 
 #### 多列布局（Columns Layout，扩展）
 - ✅ `:::columns` 多列布局容器

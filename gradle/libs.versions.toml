@@ -1,8 +1,8 @@
 [versions]
 agp = "9.1.1"
 # 锁定 SDK 口径：compileSdk 36 + targetSdk 36 + minSdk 23，未经评审不得变更
-# 36 为本地重编版（1.5.2-sdk36）兼容 vone-edu 项目而降级（官方 1.4.0+ AAR minCompileSdk=37），
-# 与 huarangmeng 开源 latex / Markdown / diagram 系列保持一致
+# 36 为重编版（1.5.2）兼容 vone-edu 项目而降级（官方 1.4.0+ AAR minCompileSdk=37），
+# 与 zusrsoft 开源 latex / Markdown / diagram 系列保持一致
 android-compileSdk = "36"
 android-targetSdk = "36"
 android-minSdk = "23"
@@ -69,14 +69,14 @@ ktor-client-darwin = { module = "io.ktor:ktor-client-darwin", version.ref = "kto
 ktor-client-java = { module = "io.ktor:ktor-client-java", version.ref = "ktor" }
 ktor-client-js = { module = "io.ktor:ktor-client-js", version.ref = "ktor" }
 
-latex-base = { module = "io.github.huarangmeng:latex-base", version.ref = "latex" }
-latex-parser = { module = "io.github.huarangmeng:latex-parser", version.ref = "latex" }
-latex-renderer = { module = "io.github.huarangmeng:latex-renderer", version.ref = "latex" }
+latex-base = { module = "io.github.zusrsoft:latex-base", version.ref = "latex" }
+latex-parser = { module = "io.github.zusrsoft:latex-parser", version.ref = "latex" }
+latex-renderer = { module = "io.github.zusrsoft:latex-renderer", version.ref = "latex" }
 
-codehigh-parser = { module = "io.github.huarangmeng:codehighlight-parser", version.ref = "codehigh" }
-codehigh-render = { module = "io.github.huarangmeng:codehighlight-render", version.ref = "codehigh" }
+codehigh-parser = { module = "io.github.zusrsoft:codehighlight-parser", version.ref = "codehigh" }
+codehigh-render = { module = "io.github.zusrsoft:codehighlight-render", version.ref = "codehigh" }
 
-diagram-render = { module = "io.github.huarangmeng:diagram-render", version.ref = "diagram" }
+diagram-render = { module = "io.github.zusrsoft:diagram-render", version.ref = "diagram" }
 
 [bundles]
 latex = ["latex-base", "latex-parser", "latex-renderer"]

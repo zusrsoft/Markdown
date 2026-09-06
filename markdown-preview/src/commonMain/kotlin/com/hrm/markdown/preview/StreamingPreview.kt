@@ -349,7 +349,7 @@ println("Hello, World!")
 
 > 这是一个引用块
 
-[链接示例](https://github.com/huarangmeng/Markdown)
+[链接示例](https://github.com/zusrsoft/Markdown)
 """.trimIndent()
 
 private fun issue19MarkdownString(): String = """

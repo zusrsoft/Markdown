@@ -96,7 +96,7 @@ mavenPublishing {
     }
 
     coordinates(
-        "io.github.huarangmeng",
+        "io.github.zusrsoft",
         "markdown-renderer",
         rootProject.property("VERSION").toString()
     )
@@ -113,7 +113,7 @@ mavenPublishing {
         """.trimIndent()
         )
         inceptionYear.set("2026")
-        url.set("https://github.com/huarangmeng/Markdown")
+        url.set("https://github.com/zusrsoft/Markdown")
         licenses {
             license {
                 name.set("MIT License")
@@ -123,15 +123,15 @@ mavenPublishing {
         }
         developers {
             developer {
-                id.set("huarangmeng")
+                id.set("zusrsoft")
                 name.set("Kotlin Multiplatform Specialist")
-                url.set("https://github.com/huarangmeng/")
+                url.set("https://github.com/zusrsoft/")
             }
         }
         scm {
-            url.set("https://github.com/huarangmeng/Markdown")
-            connection.set("scm:git:git://github.com/huarangmeng/Markdown.git")
-            developerConnection.set("scm:git:ssh://git@github.com/huarangmeng/Markdown.git")
+            url.set("https://github.com/zusrsoft/Markdown")
+            connection.set("scm:git:git://github.com/zusrsoft/Markdown.git")
+            developerConnection.set("scm:git:ssh://git@github.com/zusrsoft/Markdown.git")
         }
     }
 }
