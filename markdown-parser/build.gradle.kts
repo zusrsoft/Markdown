@@ -50,9 +50,15 @@ kotlin {
 }
 
 mavenPublishing {
-    publishToMavenCentral(true)
+    // 仅在显式设置 RELEASE_TO_CENTRAL 环境变量时启用 Central 发布，防止本地重编版误发布
+    if (providers.environmentVariable("RELEASE_TO_CENTRAL").isPresent) {
+        publishToMavenCentral(true)
+    }
 
-    signAllPublications()
+    // 仅有 GPG 签名密钥时才启用签名（本地 mavenLocal 发布可跳过）
+    if (project.hasProperty("signing.keyId") || project.hasProperty("signing.inMemoryKey")) {
+        signAllPublications()
+    }
 
     coordinates(
         "io.github.huarangmeng",

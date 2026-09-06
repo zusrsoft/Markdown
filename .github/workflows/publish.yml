@@ -24,6 +24,7 @@ jobs:
       - name: Publish to MavenCentral
         run: ./gradlew publishAllPublicationsToMavenCentralRepository --no-configuration-cache
         env:
+          RELEASE_TO_CENTRAL: 'true'
           ORG_GRADLE_PROJECT_mavenCentralUsername: ${{ secrets.MAVEN_CENTRAL_USERNAME }}
           ORG_GRADLE_PROJECT_mavenCentralPassword: ${{ secrets.MAVEN_CENTRAL_PASSWORD }}
           ORG_GRADLE_PROJECT_signingInMemoryKeyId: ${{ secrets.SIGNING_KEY_ID }}
