@@ -7,7 +7,7 @@ Guidance for Codex when working in this repository.
 Kotlin Multiplatform Markdown engine for Compose Multiplatform.
 
 - Platforms: Android, iOS, Desktop (JVM), Web (Wasm/JS)
-- Stack: Kotlin `2.3.10`, Compose Multiplatform `1.10.1`
+- Stack: Kotlin `2.4.0`, Compose Multiplatform `1.11.1`, AGP `9.1.1`
 
 ## Read This First
 

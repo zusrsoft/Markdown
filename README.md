@@ -71,7 +71,7 @@ Add to your `gradle/libs.versions.toml`:
 
 ```toml
 [versions]
-markdown = "1.5.0"
+markdown = "1.5.2"
 
 [libraries]
 markdown-parser = { module = "io.github.huarangmeng:markdown-parser", version.ref = "markdown" }

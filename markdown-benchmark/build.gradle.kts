@@ -4,11 +4,6 @@ plugins {
     alias(libs.plugins.kotlinxBenchmark)
 }
 
-repositories {
-    mavenCentral()
-    google()
-}
-
 dependencies {
     implementation(project(":markdown-parser"))
     implementation(libs.kotlinx.benchmark.runtime)

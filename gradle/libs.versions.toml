@@ -80,9 +80,6 @@ latex-renderer = { module = "io.github.huarangmeng:latex-renderer", version.ref 
 codehigh-parser = { module = "io.github.huarangmeng:codehighlight-parser", version.ref = "codehigh" }
 codehigh-render = { module = "io.github.huarangmeng:codehighlight-render", version.ref = "codehigh" }
 
-diagram-core = { module = "io.github.huarangmeng:diagram-core", version.ref = "diagram" }
-diagram-layout = { module = "io.github.huarangmeng:diagram-layout", version.ref = "diagram" }
-diagram-parser = { module = "io.github.huarangmeng:diagram-parser", version.ref = "diagram" }
 diagram-render = { module = "io.github.huarangmeng:diagram-render", version.ref = "diagram" }
 
 [bundles]
