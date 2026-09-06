@@ -146,9 +146,9 @@ git commit -m "test(renderer): 补充表格渲染的边界条件测试"
 ### 3.7 🔧 构建/依赖（build）
 
 ```bash
-git commit -m "build: 升级 Kotlin 至 2.1.0"
+git commit -m "build: 升级 Kotlin 至 2.4.0"
 
-git commit -m "build: 更新 Compose Multiplatform 至 1.7.3
+git commit -m "build: 更新 Compose Multiplatform 至 1.11.1
 
 同步更新 gradle.properties 和 libs.versions.toml。"
 ```

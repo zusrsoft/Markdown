@@ -148,9 +148,9 @@ git commit -m "test(renderer): add edge case tests for table rendering"
 ### 3.7 🔧 Build / Dependencies (build)
 
 ```bash
-git commit -m "build: upgrade Kotlin to 2.1.0"
+git commit -m "build: upgrade Kotlin to 2.4.0"
 
-git commit -m "build: update Compose Multiplatform to 1.7.3
+git commit -m "build: update Compose Multiplatform to 1.11.1
 
 Also update gradle.properties and libs.versions.toml."
 ```

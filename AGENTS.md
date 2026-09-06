@@ -16,6 +16,9 @@ Kotlin Multiplatform Markdown engine for Compose Multiplatform.
 - `markdown-renderer`: AST -> Compose / HTML
 - `markdown-preview`: demo data and preview categories
 - `composeApp`: thin shell around preview UI
+- `androidapp`: Android demo app wrapping `composeApp` (plus direct parser/renderer deps), ships a `benchmark` build type
+- `macrobenchmark`: androidx benchmark instrumentation module targeting `:androidapp`
+- `markdown-benchmark`: standalone JVM kotlinx-benchmark micro-benchmarks over `markdown-parser`
 
 Dependency chain:
 
