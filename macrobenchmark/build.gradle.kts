@@ -1,5 +1,5 @@
 plugins {
-    alias(libs.plugins.androidTest)
+    alias(libs.plugins.android.test)
 }
 
 android {
@@ -30,7 +30,7 @@ android {
 
 dependencies {
     implementation(libs.androidx.benchmark.macro.junit4)
-    implementation(libs.androidx.testExt.junit)
+    implementation(libs.androidx.test.ext.junit)
     implementation(libs.androidx.uiautomator)
 }
 

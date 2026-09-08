@@ -1,7 +1,7 @@
 plugins {
     id("org.jetbrains.kotlin.jvm")
     application
-    alias(libs.plugins.kotlinxBenchmark)
+    alias(libs.plugins.kotlinx.benchmark)
 }
 
 dependencies {
